@@ -104,13 +104,11 @@ Uncomment the Streamlit section at the bottom of Crime.py, then run:
 ------------------------------------------------------------
 
 ## 📁 Outputs
-All generated files and plots are saved in:
-/mnt/data/crime_model_output/
+Other than crime_data.csv and the crime.py, all generated files and plots from the results are saved as:
 
-Contents include:
 - feature_importances.csv
 - crime_victim_fatal_model.pkl
-- Saved visualizations (PNG files)
+- Visualizations (PNG files)
 
 ------------------------------------------------------------
 
