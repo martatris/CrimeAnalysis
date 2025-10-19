@@ -123,17 +123,9 @@ Accuracy: 0.9984939759036144
 ROC AUC: 0.9845804988662131
 
 Classification report:
-              precision    recall  f1-score   support
-
-           0     0.9985    1.0000    0.9992      1323
-           1     1.0000    0.6000    0.7500         5
-
-    accuracy                         0.9985      1328
-   macro avg     0.9992    0.8000    0.8746      1328
-weighted avg     0.9985    0.9985    0.9983      1328
 
 ----------------------------------------------------------------------
-| Classification results | Precision | Recall  | f1-score  | support |
+|| Precision | Recall  | f1-score  | support |
 |------------------------|-----------|---------|-----------|---------|
 | 0 | 0.9985 | 1.0000 | 0.9992 | 1323 |
 | 1 | 1.0000 | 0.6000 | 0.7500 | 5 |
