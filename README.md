@@ -120,7 +120,7 @@ Contents include:
 
 Accuracy: 0.9984939759036144
 
-ROC AUC: 0.9845804988662131
+ROC-AUC: 0.9845804988662131
 
 Classification report:
 
