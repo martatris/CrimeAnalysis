@@ -35,12 +35,11 @@ Each row represents a reported crime event, including offender and victim detail
 
 ## ⚙️ Technologies Used
 - Python 3.8+
-- pandas — data handling
-- numpy — numerical computations
-- matplotlib / seaborn — visualization
-- scikit-learn — machine learning
-- joblib — model saving
-- Streamlit (optional) — interactive dashboard
+- pandas: data handling
+- numpy: numerical computations
+- matplotlib/seaborn: visualization
+- scikit-learn: machine learning
+- joblib: model saving
 
 ------------------------------------------------------------
 
@@ -114,7 +113,7 @@ Other than crime_data.csv and the crime.py, all generated files and plots from t
 
 ## 📈 Results & Key Findings
 
-=== Evaluation on test set ===
+Evaluation on test set:
 
 Accuracy: 0.9984939759036144
 
