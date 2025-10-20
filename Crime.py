@@ -135,13 +135,6 @@ def eda(df, save_plots=False):
     display(miss[miss>0].head(20))
 
 def prepare_features(df, target=TARGET):
-    """
-    Prepare feature matrix X and target y.
-    We will:
-      - Keep a subset of useful columns
-      - Impute missing ages, drop rows with missing target
-      - Encode categorical features via pipeline
-    """
     required_cols = [
         "OffenderStatus", "Offender_Race", "Offender_Gender", "Offender_Age",
         "PersonType", "Victim_Race", "Victim_Gender", "Victim_Age",
@@ -257,9 +250,6 @@ def train_and_evaluate(pipeline, X, y, test_size=0.2):
     return pipeline, X_train, X_test, y_train, y_test, y_pred, y_proba
 
 def feature_importances(pipeline, numeric_features, categorical_features, top_n=25):
-    """
-    Extract feature names after OneHot encoding and show importances for RandomForest
-    """
     clf = pipeline.named_steps['clf']
     preproc = pipeline.named_steps['preprocessor']
     # get cat feature names from onehot
@@ -286,7 +276,7 @@ def save_artifacts(pipeline, fi, out_dir=MODEL_OUTPUT_DIR):
     print(f"Saved pipeline to {os.path.join(out_dir, 'crime_victim_fatal_model.pkl')}")
     print(f"Saved feature importances to {os.path.join(out_dir, 'feature_importances.csv')}")
 
-# ---- Main script execution ----
+
 if __name__ == "__main__":
     # 1) Load
     df = load_data(DATA_PATH)
