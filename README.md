@@ -141,4 +141,3 @@ Classification report:
 ## 👨‍💻 Author
 Triston Marta
 Data Science & Statistics
-Interested in data analysis, visualization, and predictive modelling.
